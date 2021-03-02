@@ -1,0 +1,3 @@
+/app/boards/evkmimxrt1064/demo_apps/led_blinky/armgcc/_build/CMakeFiles/rebuild_cache.dir
+/app/boards/evkmimxrt1064/demo_apps/led_blinky/armgcc/_build/CMakeFiles/edit_cache.dir
+/app/boards/evkmimxrt1064/demo_apps/led_blinky/armgcc/_build/CMakeFiles/iled_blinky.elf.dir

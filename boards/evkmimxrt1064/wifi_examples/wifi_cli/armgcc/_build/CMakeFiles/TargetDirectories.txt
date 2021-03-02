@@ -1,0 +1,3 @@
+/app/boards/evkmimxrt1064/wifi_examples/wifi_cli/armgcc/_build/CMakeFiles/rebuild_cache.dir
+/app/boards/evkmimxrt1064/wifi_examples/wifi_cli/armgcc/_build/CMakeFiles/edit_cache.dir
+/app/boards/evkmimxrt1064/wifi_examples/wifi_cli/armgcc/_build/CMakeFiles/wifi_cli.elf.dir
