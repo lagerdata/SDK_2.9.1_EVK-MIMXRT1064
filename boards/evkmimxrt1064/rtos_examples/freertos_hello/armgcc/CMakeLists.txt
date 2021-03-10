@@ -41,6 +41,7 @@ add_executable(${MCUX_SDK_PROJECT_NAME}
 "${ProjDirPath}/../clock_config.h"
 "${ProjDirPath}/../dcd.c"
 "${ProjDirPath}/../dcd.h"
+"${ProjDirPath}/../FreeRTOS-openocd.c"
 )
 
 target_include_directories(${MCUX_SDK_PROJECT_NAME} PRIVATE

@@ -4,13 +4,23 @@
 image = lagerdata/devenv-cortexm
 mount_dir = /app
 shell = /bin/bash
+
 cmd.build-helloworld = export ARMGCC_DIR=/usr;cd /app/boards/evkmimxrt1064/demo_apps/hello_world/armgcc;rm -rf _build;mkdir _build;cd _build;cmake .. -DCMAKE_TOOLCHAIN_FILE=../../../../../tools/cmake_toolchain_files/armgcc.cmake -G Ninja -DCMAKE_BUILD_TYPE=flexspi_nor_release  .;cmake --build .
+
 cmd.clean-helloworld = export ARMGCC_DIR=/usr;cd /app/boards/evkmimxrt1064/demo_apps/hello_world/armgcc;cd _build;ninja -t clean
 
 
-cmd.build-ledblink = export ARMGCC_DIR=/usr;cd /app/boards/evkmimxrt1064/demo_apps/led_blinky/armgcc;rm -rf _build;mkdir _build;cd _build;cmake .. -DCMAKE_TOOLCHAIN_FILE=../../../../../tools/cmake_toolchain_files/armgcc.cmake -G Ninja -DCMAKE_BUILD_TYPE=flexspi_nor_release  .;cmake --build .
+cmd.build-ledblink = export ARMGCC_DIR=/usr;cd /app/boards/evkmimxrt1064/demo_apps/led_blinky/armgcc;rm -rf _build;mkdir _build;cd _build;cmake .. -DCMAKE_TOOLCHAIN_FILE=../../../../../tools/cmake_toolchain_files/armgcc.cmake -G Ninja -DCMAKE_BUILD_TYPE=release  .;cmake --build .
 
 cmd.clean-ledblink = export ARMGCC_DIR=/usr;cd /app/boards/evkmimxrt1064/demo_apps/led_blinky/armgcc;cd _build;ninja -t clean
 
 
+cmd.build-virtcom = export ARMGCC_DIR=/usr;cd /app/boards/evkmimxrt1064/demo_apps/hello_world_virtual_com/armgcc;rm -rf _build;mkdir _build;cd _build;cmake .. -DCMAKE_TOOLCHAIN_FILE=../../../../../tools/cmake_toolchain_files/armgcc.cmake -G Ninja -DCMAKE_BUILD_TYPE=flexspi_nor_release  .;cmake --build .
+
+
 cmd.build-wifi-test = export ARMGCC_DIR=/usr;cd /app/boards/evkmimxrt1064/wifi_examples/wifi_cli/armgcc;rm -rf _build;mkdir _build;cd _build;cmake .. -DCMAKE_TOOLCHAIN_FILE=../../../../../tools/cmake_toolchain_files/armgcc.cmake -G Ninja -DCMAKE_BUILD_TYPE=flexspi_nor_release  .;cmake --build .
+
+cmd.clean-wifi-test = export ARMGCC_DIR=/usr;cd /app/boards/evkmimxrt1064/wifi_examples/wifi_cli/armgcc;cd _build;ninja -t clean
+
+
+cmd.build-freertos-hello = export ARMGCC_DIR=/usr;cd /app/boards/evkmimxrt1064/rtos_examples/freertos_hello/armgcc;rm -rf _build;mkdir _build;cd _build;cmake .. -DCMAKE_TOOLCHAIN_FILE=../../../../../tools/cmake_toolchain_files/armgcc.cmake -G Ninja -DCMAKE_BUILD_TYPE=flexspi_nor_debug  .;cmake --build .
